@@ -12,7 +12,7 @@
 */
 // HOMEPAGE VIEW
 Route::get('/', function () {
-    return view('php.laravel.welcome2');
+    return view('laravel.index');
 });
 
 // WELCOME PAGE
