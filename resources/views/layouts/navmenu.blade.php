@@ -19,7 +19,7 @@
         <!-- Navigation menu -->
         <ul class="nav-menu">
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="category-details.html">Categories</a>  </li>
+          <li><a href="{{url('category/index')}}">Categories</a>  </li>
           <li> <a href="user-login.html">Post a Job</a> </li>
           <li><a href="#">About us</a></li>
           <li><a href="#">Contact</a></li>

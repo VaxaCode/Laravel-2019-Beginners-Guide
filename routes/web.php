@@ -17,6 +17,11 @@ Route::get('/', function () {
 Route::get('/laravel/show', function() {
   return view('laravel.show');
 });
+
+// DEFINE THE CATEGORIES PAGE VIEW
+Route::get('/category/index', function() {
+  return view('category.index');
+});
 // WELCOME PAGE
 Route::get('/welcome', function () {
     return view('welcome');
