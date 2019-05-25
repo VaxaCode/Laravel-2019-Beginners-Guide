@@ -1,4 +1,8 @@
 @extends('layouts.master')
+
+@section('PageTitle', ' Laravel Details Page')
+@section('Description', 'Details Page Description')
+
 @section('contents')
 
     <!-- Page header -->

@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Post a job position or create your online !">
+    <meta name="description" content="@yield('Description')">
     <meta name="keywords" content="">
 
-    <title>HomePage - Laravel2019</title>
+    <title>@yield('PageTitle') - PHP Framework</title>
     <!-- Styles -->
     <link href="{{ asset('assets/css/main.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/dashboard.css') }}" rel="stylesheet">

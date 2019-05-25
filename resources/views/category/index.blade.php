@@ -1,4 +1,7 @@
 @extends('layouts.master')
+
+@section('PageTitle', ' Category Page Title')
+@section('Description', 'Category Description')
 @section('contents')
     <header class="site-header size-lg text-center" style="background-color: #000;">
       <div class="container">

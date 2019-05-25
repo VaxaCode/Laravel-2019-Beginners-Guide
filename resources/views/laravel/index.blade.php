@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('PageTitle', ' Laravel.com')
+@section('Description', 'Welcome to HomePage Description')
 @section('contents')
     <header class="site-header size-lg text-center" style="background-color: #000;">
       <div class="container">
