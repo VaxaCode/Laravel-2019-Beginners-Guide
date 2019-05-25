@@ -14,7 +14,9 @@
 Route::get('/', function () {
     return view('laravel.index');
 });
-
+Route::get('/laravel/show', function() {
+  return view('laravel.show');
+});
 // WELCOME PAGE
 Route::get('/welcome', function () {
     return view('welcome');
