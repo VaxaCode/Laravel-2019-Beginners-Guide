@@ -10,7 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// HOMEPAGE VIEW
 Route::get('/', function () {
+    return view('php.laravel.welcome2');
+});
+
+// WELCOME PAGE
+Route::get('/welcome', function () {
     return view('welcome');
 });
