@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateJobsTable extends Migration
+class CreateCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,11 @@ class CreateJobsTable extends Migration
      */
     public function up()
     {
-       Schema::disableforeignKeyConstraints();
-        Schema::create('jobs', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->Increments('id');
-            $table->integer('posted_by')->unsigned();
-            $table->foreign('posted_by')->references('id')->on('users');
             $table->string('title');
-            $table->string('job_type');
             $table->text('description')->nullable();
             $table->string('slug')->unique();
-            $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
@@ -35,6 +29,6 @@ class CreateJobsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jobs');
+        Schema::dropIfExists('categories');
     }
 }
