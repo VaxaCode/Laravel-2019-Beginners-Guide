@@ -18,7 +18,15 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password',
     ];
-
+//USER CLASS
+/*one to one
+*Defining The Inverse Of The Relationship
+*
+*/
+public function jobs()
+{
+  return $this->belongsTo(Job::class, 'posted_by');
+}
     /**
      * The attributes that should be hidden for arrays.
      *
