@@ -11,6 +11,7 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+      //POPULATE THE INSTANCES YOU NEED
+      factory('App\Category',  6)->create();
     }
 }
