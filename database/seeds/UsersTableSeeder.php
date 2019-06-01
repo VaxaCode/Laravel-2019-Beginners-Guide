@@ -11,6 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+      //POPULATE THE INSTANCES YOU NEED
+      factory('App\User',  3)->create();
     }
 }
