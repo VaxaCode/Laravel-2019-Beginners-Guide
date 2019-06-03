@@ -3,17 +3,7 @@
 @section('PageTitle', ' Laravel.com')
 @section('Description', 'Welcome to HomePage Description')
 @section('contents')
-    <header class="site-header size-lg text-center" style="background-color: #000;">
-      <div class="container">
-        <div class="col-xs-12">
-          <h2>There are <mark>3,500 +</mark> job vacancies right now!</h2>
-          <h5 class="font-alt">Search Jobs in one minute</h5>
-          <br><br><br>
-          @include('layouts.searchform')
-        </div>
-
-      </div>
-    </header>
+  
     <!-- END Site header -->
     <!-- Main container -->
     <main>
